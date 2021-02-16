@@ -6,7 +6,8 @@ LABEL maintainer=hello@drewpotter.com
 ENV LANG en_GB.UTF-8
 ENV LANGUAGE en_GB:en
 ENV LC_ALL C
-RUN echo eselect locale list
+RUN localedef -i en_GB -f UTF-8 en_GB.UTF-8
+RUN eselect locale set en_GB.utf8
 RUN . /etc/profile
 RUN locale
 
