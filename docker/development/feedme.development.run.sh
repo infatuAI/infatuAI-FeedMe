@@ -29,5 +29,5 @@ mix ecto.migrate
 echo "\nTest the installation..."
 MIX_ENV=test mix test
 
-echo "\n Launching Phoenix webserver..."
+echo "\nLaunching Phoenix webserver..."
 mix phx.server
